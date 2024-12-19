@@ -128,7 +128,7 @@ describe("contest-platform", () => {
     );
     console.log("Your transaction signature", tx);
   }); 
-  /*
+
   it("init the token alice valut account", async() => {
     
     const tx1 = await program.rpc.initTokenAccountForNewContest(
@@ -210,8 +210,8 @@ describe("contest-platform", () => {
     } catch (error) {
       console.log(error);
     }
-  }); */
-  /*
+  }); 
+
   it("depost the alice token to the contest", async() => {
     try {
       const deposit_contest_tx = await program.rpc.depositAliceTokenContest(
@@ -277,7 +277,7 @@ describe("contest-platform", () => {
     }
   });*/
   
-  /*
+ 
   it("set the winner in the contest", async() => {
     const tx = await program.rpc.setWinner(
       contestIndex,{
@@ -295,8 +295,8 @@ describe("contest-platform", () => {
     );
     const contestData = await program.account.contest.fetch(contest);
     console.log(contestData);
-  }) */
-  /*
+  }) 
+         
   it("winner claim", async() => {
     const contestAliceData = await program.account.contestInfo.fetch(contestAliceInfo);
 
@@ -328,8 +328,8 @@ describe("contest-platform", () => {
     } catch(error) {
       console.log(error);
     }
-  }) */
-  /*
+  }) 
+
   it("withdraw", async() => {
     try{
       const tx = await program.rpc.withdrawToken(
@@ -355,8 +355,8 @@ describe("contest-platform", () => {
     } catch(error) {
       console.log(error);
     }
-  }) */
-  /*
+  }) 
+
   it("update fee", async() => {
     const new_fee = 3;
     const tx = await program.rpc.updateFee(
@@ -386,8 +386,6 @@ describe("contest-platform", () => {
       }
     );
   });
-  */
-  
 });
 // Utility function to sleep for a specified duration
 async function sleep(ms: number) {
